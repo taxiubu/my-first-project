@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Thêm"
+        android:icon="@drawable/ic_add_black_24dp"
+        app:showAsAction="always"
+        android:id="@+id/itNewAdd"/>
+    <item android:title="Cài đặt"
+        android:orderInCategory="2">
+        <menu>
+            <item
+                android:id="@+id/itWhite"
+                android:title="Nền trắng"/>
+            <item
+                android:title="Nền xanh"
+                android:id="@+id/itBlue"/>
+        </menu>
+
+
+    </item>
+
+    <item android:title="Xóa"
+        android:id="@+id/itNewRemove"/>
+
+    <item android:title="Trở về"
+        android:id="@+id/itNewBack"/>
+</menu>

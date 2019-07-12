@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewContact">
+
+    <EditText
+        android:id="@+id/etName"
+        android:hint="Tên"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:layout_below="@+id/etName"
+        android:id="@+id/etNumberPhone"
+        android:hint="Số điện thoại"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_below="@+id/etNumberPhone"
+        android:id="@+id/ll"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvGroup"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etNumberPhone"
+            android:text="Nhóm"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/spTypeGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+
+    <Button
+        android:layout_below="@+id/btSex"
+        android:id="@+id/btTune"
+        android:text="TUNE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btCancel"
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btOK"
+        android:text="OK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_below="@+id/ll"
+        android:id="@+id/btSex"
+        android:text="Giới Tính"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/ll"
+        android:textSize="30dp"
+
+        android:layout_toRightOf="@+id/btSex"
+        android:id="@+id/tvSex"
+
+        android:textAlignment="center"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/tvTune"
+        android:layout_toRightOf="@id/btTune"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_below="@id/tvSex"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</RelativeLayout>
